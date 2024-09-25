@@ -12,7 +12,7 @@
         }
 
         body {
-            width: 95%;
+            width: 80%;
             font-family: Arial, sans-serif;
             background-color: #d9d9d9;
             padding: 10px 0; /* Adiciona espaçamento vertical de 20px (superior e inferior) */
@@ -96,6 +96,14 @@
         .video-content {
             flex: 1;
             max-width: 100%;
+            height: auto;
+            max-height: 70vh; /* 50% da altura da viewport */
+        }
+
+        .video-content video {
+            width: 100%; /* O vídeo irá ocupar 100% da largura disponível */
+            height: auto; /* A altura será ajustada proporcionalmente */
+            max-height: 70vh; /* A altura máxima do vídeo será 50% da altura da viewport */
         }
 
         /* Alinhamento horizontal da imagem e do texto */
@@ -277,8 +285,7 @@
             </div>
                 <div>
                     <h3>Tans: logic for kids</h3>
-                    <p>Educational application focused on logical reasoning and computational thinking for children aged 7 to 9, developed using SwiftUI.</p>
-                    <p1>Swift | SwiftUI | Haptics</p1>
+                    <p>Educational application focused on logical reasoning and computational thinking for children aged 7 to 9, developed using SwiftUI. The app has 3 games, and all of them were developed entirely with SwiftUI.</p>                    <p1>Swift | SwiftUI | Haptics</p1>
                 </div>
             </div>
         </div>
@@ -360,8 +367,7 @@
             </div>
                 <div>
                     <h3>Animal Keyboards</h3>
-                    <p>Interactive keyboard designed to assist in motor and cognitive discovery of children through animal sound identification developed in SwiftUI.</p>
-                    <p1>Swift | SwiftUI | AVFoundation | Design</p1>
+                    <p>Interactive keyboard designed to assist in motor and cognitive discovery of children through animal sound identification, developed in SwiftUI. This was also my first time participating in the Swift Student Challenge.</p>                    <p1>Swift | SwiftUI | AVFoundation | Design</p1>
                 </div>
             </div>
         </div>
