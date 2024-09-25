@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Gustavo Diefenbach</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 95%;
+            font-family: Arial, sans-serif;
+            background-color: #d9d9d9;
+            padding: 10px 0; /* Adiciona espaçamento vertical de 20px (superior e inferior) */
+            margin: 0 auto; /* Centraliza o conteúdo */
+        }
+
+        .background {
+            width: 100%;
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        .header-info {
+            display: flex;
+        }
+
+        .name {
+            display: inline;
+            font-size: 45px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .contact-info {
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 20px;
+            font-weight: 100;
+            color: #333;
+        }
+
+        .contact-info a {
+            text-decoration: none;
+            color: #0073e6;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            margin-top: 30px;
+            font-weight: 100;
+            line-height: 1.6;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .container p {
+            margin-bottom: 20px;
+        }
+
+        .container h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .video-container {
+            width: 100%;
+            margin-top: 40px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 20px;
+        }
+
+        .video-content {
+            flex: 1;
+            max-width: 100%;
+        }
+
+        .video-text {
+            display: flex;
+            align-items: start;
+        }
+
+        .video-text img {
+            width: 100px;
+            height: auto;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        .video-container h1 {
+            font-size: 5%;
+            margin-bottom: 10px;
+        }
+
+        .video-container p {
+            font-size: 12px;
+            margin-bottom: 20px;
+        }
+
+        .video-container p1 {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .video-container video {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+        }
+
+        .description {
+            margin-top: 30px;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ddd;
+            line-height: 1.6;
+        }
+
+        .icon-section {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .badget-section {
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        .badget-section img {
+            background-color: transparent;
+            border-radius: 0;
+            box-shadow: none;
+        }
+
+        img {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            background-color: transparent;
+            margin-right: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="header-info">
+            <img src="perfil.jpg" alt="Swift Development" style="width: 20%; height: auto; border-radius: 4px;">
+            <div class="contact-info">
+                <h1>GUSTAVO DIEFENBACH</h1>
+                <p>Porto Alegre, RS - Brasil</p>
+                <p><a href="mailto:gustavodiefenbach@gmail.com">gustavodiefenbach@gmail.com</a></p>
+                <p><a href=" https://wa.me/5551991301412">+55 51 99130 1412</a> </p>
+                <p><a href="https://www.linkedin.com/in/gstvdfnbch/">LinkedIn</a> |
+                    <a href="https://github.com/gstvdfnbch">GitHub</a> |
+                    <a href="https://gstvdfnbch.medium.com/">Medium</a></p>
+            </div>
+        </div>
+     
+        <div class="container">
+            <h2>About me</h2>
+            <p>I am seeking opportunities that combine technical expertise with business management and product development. My goal is to contribute to the creation of innovative digital products, improving user experience and satisfaction.</p>
+        
+            <p>Currently, I am expanding my skills in Swift and UX/UI Design at Apple Academy POA at PUC-RS, focusing on app development to enhance my versatility in product design and technology.</p>
+        
+            <p>I'm currently studying Electrical Engineering at UFRGS, where I interned at PONFAC, working on solutions using digital image processing. Before that, I was a technical scholar at the Hydraulic Works Laboratory.</p>
+        
+            <p>My journey began with technical education in electronics at Salzano Vieira da Cunha, participating in science fairs and interning at ProTune Electronics, developing automotive touch screen interfaces in C.</p>
+        
+            <p>With a passion for innovation, I look forward to joining a team that values creativity and growth.</p>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-text">
+                <a href="https://apple.co/4gFeVes">
+                    <div>
+                <img src="icons/flipty.png" alt="Swift Development" class="img">
+                <div class="badget-section">
+                    <img src="apple.png" alt="badge">
+                </div>
+            </a>
+            </div>
+                <div>
+                    <h3>Flipty</h3>
+                    <p>Developed an application for Apple Watch and iPhone featuring a six-sided dice game and a Head and Tails game. Each game is activated through gesture detection. In the dice game, rotating your wrist causes the dice to spin and stop at a random number. In the Head and Tails game, when you make a throwing motion, like you're tossing a coin, the virtual coin on your device rotates and lands on one of its sides.</p>
+                    <p1>Swift | SpriteKit | AVFoudation | Animation</p1>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/flity.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div> 
+
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-text">
+                <a href="https://apple.co/4ehpSBn">
+                <div>
+                <img src="icons/burguer.png" alt="Swift Development">
+                <div class="badget-section">
+                    <img src="apple.png" alt="badge">
+                </div>
+            </a>
+            </div>
+                <div>
+                    <h3>Burguer Maker</h3>
+                    <p>Burger Maker is my first independent game, a burger-making simulator where the difficulty increases as your score grows. It features two modes: a single-player mode where you compete for a spot on the global rankings, and a competitive mode where two players can challenge each other on the same iPad to see who can make burgers the fastest and most accurately. The game also supports multitouch, allowing it to identify which player is making each touch during gameplay.</p>
+                    <p1>Swift | SpriteKit | AVFoundation | AdMob | Design</p1>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/burguermaker2player.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/burguermaker.mov" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div> 
+
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-text">
+                <a href="https://apple.co/4ehfYzE">
+                <div>
+                <img src="icons/tans.png" alt="Swift Development">
+                <div class="badget-section">
+                    <img src="apple.png" alt="badge">
+                </div>
+            </a>
+            </div>
+                <div>
+                    <h3>Tans: logic for kids</h3>
+                    <p>Educational application focused on logical reasoning and computational thinking for children aged 7 to 9, developed using SwiftUI. The app has 3 games, and all of them were developed entirely with SwiftUI.</p>                    <p1>Swift | SwiftUI | Haptics</p1>
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/4tans.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div> 
+
+
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-text">
+                <a href="https://apple.co/4dm3fKR">
+                <div>
+                <img src="icons/byte.png" alt="Swift Development">
+                <div class="badget-section">
+                    <img src="apple.png" alt="badge">
+                </div>
+            </a>
+            </div>
+                <div>
+                    <h3>Bity Verse</h3>
+                    <p>A game inspired by Space Invaders, developed in just one week using the SpriteKit framework. The shooting is activated automatically, and the character's movement is controlled using the accelerometer.</p>                    <p1>Swift | Spritekit | Haptics | CoreMotion </p1>
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/5byteverse.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div> 
+
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-text">
+                
+                <a href="https://apple.co/3ZDdEyp">
+
+                <div>
+                <img src="icons/tardigrado.png" alt="Swift Development">
+                <div class="badget-section">
+                    <img src="apple.png" alt="badge">
+                </div>
+            </a>
+            </div>
+                <div>
+                    <h3>Tardigrado</h3>
+                    <p>A platform game where I had the opportunity to work with the SpriteKit framework for the first time. This game utilized character action control, collisions, and basic game design concepts.</p>
+                    <p1>Swift | SpriteKit | AVFoudation | Animation</p1>
+                </div>
+            </div>
+        </div>
+
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/3tardigrado.mov" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div> 
+
+      <div class="video-container">
+        <div class="video-content">
+            <a href="https://apple.co/4dm2pxw">
+
+            <div class="video-text">
+                <a href="https://apple.co/4dm2pxw">
+                    <div>
+                    <img src="icons/animal.png" alt="Swift Development">
+                    <div class="badget-section">
+                        <img src="apple.png" alt="badge">
+                    </div>
+                </a>
+            </div>
+                <div>
+                    <h3>Animal Keyboards</h3>
+                    <p>Interactive keyboard designed to assist in motor and cognitive discovery of children through animal sound identification, developed in SwiftUI. This was also my first time participating in the Swift Student Challenge.</p>                    <p1>Swift | SwiftUI | AVFoundation | Design</p1>
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/2animalkeyboard.mp4" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div>  
+
+    <div class="video-container">
+        <div class="video-content">
+            <div class="video-text">
+                <div>
+                <img src="icons/flappy.png" alt="Swift Development">
+            </div>
+                <div>
+                    <h3>Flappy Chicke</h3>
+                    <p>Developed a terminal-style game referencing the Flappy Bird game. It was developed in Swift, with no external dependencies, in less than a week of work.</p>
+                    <p1>Swift on Mac terminal</p1>
+                </div>
+            </div>
+        </div>
+        <div class="video-content">
+            <video controls>
+                <source src="Videos/1flipplychicken.mov" type="video/mp4">
+                Seu navegador não suporta o elemento de vídeo.
+            </video>
+        </div>
+    </div>  
+
+</body>
+</html>
