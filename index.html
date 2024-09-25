@@ -8,7 +8,7 @@
         body {
             font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -17,7 +17,9 @@
         }
         .container {
             display: flex;
+            align-content: start;
             align-items: center;
+            flex-direction: row;
             background-color: rgb(0, 0, 0);
             padding: 20px;
             border-radius: 10px;
@@ -25,7 +27,6 @@
             max-width: 800px;
             width: 100%;
             margin-bottom: 20px;
-            flex-wrap: wrap; 
         }
         .profile-pic {
             width: 150px;
@@ -35,7 +36,10 @@
             margin-right: 20px;
         }
         .info {
-            display: flex;
+            display: block;
+            width: 100%;
+            margin: 0;
+align-self: flex-start;
             flex-direction: column;
             flex-grow: 1;
         }
@@ -58,14 +62,17 @@
         }
         /* Estilo para o segundo bloco */
         .images {
+            width: 30%;
+            height: auto;
             display: flex;
             flex-direction: column;
             margin-right: 20px;
         }
-        .images img {
-            width: 25%; /* Largura fixa para as imagens */
+        .widget {
+            width: 50%;
             height: auto;
-            margin-bottom: 10px; /* Espaço entre as imagens */
+            margin-right: 20px;
+            margin-top: 20px;
         }
         .text-content {
             display: flex;
@@ -101,7 +108,6 @@
             margin-top: 10px;
             font-size: 0.9rem;
         }
-        /* Estilo do vídeo */
         .video-container {
             width: 100%;
             margin-top: 20px;
@@ -111,26 +117,88 @@
             height: auto; /* Mantém a proporção */
             border-radius: 10px;
         }
-        .container-apps {
+        .container-collum {
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            align-items: center;
+            flex-direction: column;
             background-color: rgb(0, 0, 0);
-            padding: 20px;
-            border-radius: 10px;
+            margin-bottom: 20px;
             box-shadow: 0 0 20px rgba(128, 128, 128, 0.1);
             max-width: 800px;
             width: 100%;
-            margin-bottom: 20px;
+            border-radius: 10px;
+            padding: 20px;
+            align-items: center;
         }
+        .container-apps {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .medium-container {
+            width: 100%;
+            max-width: 840px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap; 
+            overflow-x: scroll;
+        }
+        .medium-container::-webkit-scrollbar {
+            display: none; /* Opcional: Oculta a barra de rolagem */
+        }
+        .medium-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px;
+            max-width: 600px;
+            height: 300px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+            background-color: black;
+        }
+        .medium-card img {
+            width: 100%;
+            align-items: center;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden; /* Esconder o conteúdo que exceder a altura */
+        }
+        .medium-card h3 {
+            margin: 0;
+            font-size: 20px;
+            color: white;
+        }
+        .medium-card p {
+            margin: 5px 0;
+            font-size: 10px;
+            max-width: 800px;
+            width: 100%;
+            color: #ffffff97;
+        }
+
+        .medium-card h3, .medium-card p {
+            word-wrap: break-word; /* Força a quebra de palavras grandes */
+            white-space: normal; /* Permite que o texto quebre linhas */
+            text-align: left; /* Opcional: alinha o texto à esquerda */
+        }
+
         /* Estilo responsivo */
         @media (max-width: 600px) {
             .container {
+                flex-direction: column;
                 text-align: center;
             }
             .container-apps {
                 flex-direction: column;
+                text-align: center;
+            }
+            .container-collum {
                 text-align: center;
             }
             .profile-pic {
@@ -140,10 +208,23 @@
             .images {
                 align-items: center;
                 margin-right: 0;
+                width: 50%;
             }
-            .images img {
-                width: 30%; /* Largura total no mobile */
+            .widget {
+                width: 100%;
+                height: auto;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 20px;
             }
+            /* .medium-container {
+                width: 100%;
+                height: auto;
+                display: flex;
+                flex-direction: row;
+                white-space: nowrap; 
+                overflow-x: scroll;
+            } */
         }
     </style>
 </head>
@@ -157,45 +238,112 @@
     <div class="info">
         <h1>GUSTAVO DIEFENBACH</h1>
         <p>Porto Alegre, RS - Brazil 🇧🇷</p>
-        <p><a href="mailto:gustavodiefenbach@gmail.com">gustavodiefenbach@gmail.com</a></p>
-        <p><a href="https://wa.me/5551991301412">+55 51 99130 1412</a></p>
+        <p><a href="mailto:gustavodiefenbach@gmail.com" target="_blank">gustavodiefenbach@gmail.com</a></p>
+        <p><a href="https://wa.me/5551991301412" target="_blank">+55 51 99130 1412</a></p>
         <p>
-            <a href="https://www.linkedin.com/in/gstvdfnbch/">LinkedIn</a> |
-            <a href="https://github.com/gstvdfnbch">GitHub</a> |
-            <a href="https://gstvdfnbch.medium.com/">Medium</a>
+            <a href="https://www.linkedin.com/in/gstvdfnbch/" target="_blank">LinkedIn</a> |
+            <a href="https://github.com/gstvdfnbch" target="_blank">GitHub</a> |
+            <a href="https://gstvdfnbch.medium.com/" target="_blank">Medium</a>
         </p>
     </div>
 </div>
 
-<!-- Segunda seção - Adicionada abaixo -->
-<div class="container-apps">
-    <div class="images">
-        <img src="icons/burguer.png" alt="Imagem 1">
-        
-        <img src="apple.png" alt="Imagem 2">
-    </div>
+<div class="medium-container">
+        <a  href="https://medium.com/@gstvdfnbch/creative-pixel-art-customization-with-textures-uiimage-core-graphics-swift-ios-627e278fdf6?source=user_profile---------0----------------------------" target="_blank">
+            <div class="medium-card">
+                <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*-Ex_G4ovfhqe-satd0cwXQ.png" alt="Medium Post Thumbnail">
+                <div style="width: 100%;">
+                    <h3>Pixel Art Texture with Texture: UIImage, Core Graphics</h3>
+                    <p>The goal here is to create a texture storage model in a ".png" file, to be used for customizing animations in an automated way, simply by updating the texture file, and use it in Swift Project.</p>
+                </div>
+            </div>
+        </a>
 
-    <div class="text-content">
-        <h1>Burguer Maker</h1>
-        
-        <p>Burger Maker is my first independent game, a burger-making simulator where the difficulty increases as your score grows. It features two modes: a single-player mode where you compete for a spot on the global rankings, and a competitive mode where two players can challenge each other on the same iPad to see who can make burgers the fastest and most accurately. The game also supports multitouch, allowing it to identify which player is making each touch during gameplay.</p>
-        
-        <div class="tags">
-            <span>Swift</span>
-            <span>SpriteKit</span>
-            <span>AVFoundation</span>
-            <span>Design</span>
+        <a  href="https://medium.com/@gstvdfnbch/two-ways-to-do-glassmophisms-in-swiftui-swiftui-uikit-uiblureffect-7b63da1a9292?source=user_profile---------8----------------------------" target="_blank">
+            <div class="medium-card" href="" target="_blank">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*1mVn5iR4AJIQzr29q4WtZw.png" alt="Medium Post Thumbnail">
+                <div style="width: 100%;">
+                    <h3>Two ways to do Glassmophisms in SwiftUI: SwiftUI and UIKit</h3>
+                    <p>This article explores two methods to implement Blur Views in SwiftUI projects. Developing that blur using techniques that utilize purely SwiftUI elements.</p>
+                </div>
+            </div>
+        </a>
+
+        <a  href="https://medium.com/@gstvdfnbch/spritekit-like-swiftui-part-i-b51322e57b16?source=user_profile---------2----------------------------" target="_blank">
+            <div class="medium-card" href="" target="_blank">
+                <img src="https://media.licdn.com/dms/image/v2/D4D22AQGfwdfxc5mHyQ/feedshare-shrink_800/feedshare-shrink_800/0/1726152382023?e=1730332800&v=beta&t=WfqCU2YlcZag4mUB_u8yyQEOYZ4BbAD1iv39rQRfit0" alt="Medium Post Thumbnail">
+                <div style="width: 100%;">
+                    <h3>SpriteKit like SwiftUI</h3>
+                    <p>I’ll show how I combine SwiftUI with SpriteKit to leverage SpriteKit’s power while keeping the flexibility and ease of SwiftUI’s layout and preview features.</p>
+                </div>
+            </div>
+        </a>
+
+        <div class="medium-card" href="" target="_blank">
+            <a  href="https://medium.com/@gstvdfnbch/multi-touch-spritekit-ios-spritekit-game-development-f5db6c4b642c?source=user_profile---------7----------------------------" target="_blank">
+                <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*sowlX0kE7vzDyHaKMn_yIA.png" alt="Medium Post Thumbnail">
+            <div style="width: 100%;">
+                <h3>Multi-Touch SpriteKit: Game Development</h3>
+                <p>Explore implementing a practical example, demonstrating how to manipulate objects on the screen using multiple simultaneous touches.</p>
+            </div>
+            </a>
         </div>
-    </div>
+
+        <div class="medium-card" href="" target="_blank">
+            <a  href="https://medium.com/@gstvdfnbch/implementing-virtual-controller-swiftui-spritekit-and-game-controller-framework-237fdfcbac38?source=user_profile---------10----------------------------" target="_blank">
+                <img src="https://miro.medium.com/v2/resize:fit:4800/format:webp/1*qxY0swysEFzXQRKzDvB5SQ.png" alt="Medium Post Thumbnail">
+            <div style="width: 100%;">
+                <h3>Implementing Virtual Controller: Game Controller</h3>
+                <p>Virtual controllers are programmatic interfaces that allow users to interact with games and apps, simulating a physical controller. This feature is particularly useful for developers who want to offer a more engaging gaming experience on mobile devices.</p>
+            </div>
+            </a>
+        </div>
+
+        <div class="medium-card" href="" target="_blank">
+            <a  href="https://medium.com/@gstvdfnbch/extension-cgvector-for-better-vector-operations-swift-69f3834e3e1b" target="_blank">
+                <img src="https://miro.medium.com/v2/resize:fit:2000/format:webp/1*zV-ewnTHBaZMTiIjJo9LPA.png" alt="Medium Post Thumbnail">
+            <div style="width: 100%;">
+                <h3>Extension CGVector for better vector operations</h3>
+                <p>Swift’s CGVector provides a basic framework, and we’re going to enhance it even further. In this article, we'll explore how to extend CGVector to include essential vector operations, making vector manipulation in Swift more powerful.</p>
+            </div>
+            </a>
+        </div>
+
 
 </div>
 
-<!-- <div class="video-container">
-    <video controls>
-        <source src="Videos/burguermaker.mov" type="video/mp4">
-        Seu navegador não suporta a reprodução de vídeos.
-    </video>
-</div> -->
+<!-- Segunda seção - Adicionada abaixo -->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/burguer.png" alt="Imagem 1">
+            
+            <!-- <img src="apple.png" alt="Imagem 2"> -->
+        </div>
+
+        <div class="text-content">
+            <h1>Burguer Maker</h1>
+            
+            <p>Burger Maker is my first independent game, a burger-making simulator where the difficulty increases as your score grows. It features two modes: a single-player mode where you compete for a spot on the global rankings, and a competitive mode where two players can challenge each other on the same iPad to see who can make burgers the fastest and most accurately. The game also supports multitouch, allowing it to identify which player is making each touch during gameplay.</p>
+            
+            <div class="tags">
+                <span>Swift</span>
+                <span>SpriteKit</span>
+                <span>AVFoundation</span>
+                <span>Design</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Videos/burguermaker.mov" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+</div>
+
 
 </body>
 </html>
