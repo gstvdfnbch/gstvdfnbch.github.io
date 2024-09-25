@@ -19,35 +19,37 @@
             margin: 0 auto; /* Centraliza o conteúdo */
         }
 
-        .header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .background {
+            width: 100%;
+            margin-top: 40px;
             background-color: white;
             padding: 20px;
             border: 1px solid #ddd;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
             border-radius: 20px;
         }
 
         .header-info {
             display: flex;
-            align-items: center;
         }
 
         .name {
+            display: inline;
             font-size: 45px;
             font-weight: bold;
             margin-left: 10px;
         }
 
         .contact-info {
-            text-align: right;
+            text-align: left;
         }
 
         .contact-info p {
             margin: 5px 0;
-            font-size: 12px;
-            font-weight: bold;
+            font-size: 20px;
+            font-weight: 100;
             color: #333;
         }
 
@@ -62,25 +64,21 @@
 
         .container {
             margin-top: 30px;
-            background-color: white;
-            padding: 20px;
-            border: 1px solid #ddd;
+            font-weight: 100;
             line-height: 1.6;
             font-size: 16px;
             color: #333;
-            border-radius: 20px;
         }
 
         .container p {
-            margin-bottom: 20px; /* Adiciona espaçamento após cada parágrafo */
-        }
-
-        .container h2 {
-            font-size: 24px;
             margin-bottom: 20px;
         }
 
-        /* Estilo dos vídeos */
+        .container h2 {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
         .video-container {
             width: 100%;
             margin-top: 40px;
@@ -96,17 +94,8 @@
         .video-content {
             flex: 1;
             max-width: 100%;
-            height: auto;
-            max-height: 70vh; /* 50% da altura da viewport */
         }
 
-        .video-content video {
-            width: 100%; /* O vídeo irá ocupar 100% da largura disponível */
-            height: auto; /* A altura será ajustada proporcionalmente */
-            max-height: 70vh; /* A altura máxima do vídeo será 50% da altura da viewport */
-        }
-
-        /* Alinhamento horizontal da imagem e do texto */
         .video-text {
             display: flex;
             align-items: start;
@@ -119,8 +108,8 @@
             margin-bottom: 10px;
         }
 
-        .video-container h3 {
-            font-size: 20px;
+        .video-container h1 {
+            font-size: 24px;
             margin-bottom: 10px;
         }
 
@@ -132,7 +121,6 @@
         .video-container p1 {
             font-size: 14px;
             margin-bottom: 20px;
-            /* text-transform: uppercase; */
         }
 
         .video-container video {
@@ -174,41 +162,38 @@
             box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
             border-radius: 20px;
             background-color: transparent;
+            margin-right: 20px;
         }
 
     </style>
 </head>
 <body>
-
-    <header class="header">
+    <div class="background">
         <div class="header-info">
-            <div class="left-bar"></div>
-            <div class="name">
-                <p>GUSTAVO</p>
-                <p>DIEFENBACH</p>
+            <img src="perfil.jpg" alt="Swift Development" style="width: 20%; height: auto; border-radius: 4px;">
+            <div class="contact-info">
+                <h1>GUSTAVO DIEFENBACH</h1>
+                <p>Porto Alegre, RS - Brasil</p>
+                <p><a href="mailto:gustavodiefenbach@gmail.com">gustavodiefenbach@gmail.com</a></p>
+                <p><a href=" https://wa.me/5551991301412">+55 51 99130 1412</a> </p>
+                <p><a href="https://www.linkedin.com/in/gstvdfnbch/">LinkedIn</a> |
+                    <a href="https://github.com/gstvdfnbch">GitHub</a> |
+                    <a href="https://gstvdfnbch.medium.com/">Medium</a></p>
             </div>
         </div>
-        <div class="contact-info">
-            <p>Porto Alegre, RS - Brasil</p>
-            <p><a href="mailto:gustavodiefenbach@gmail.com">gustavodiefenbach@gmail.com</a></p>
-            <p><a href=" https://wa.me/5551991301412">+55 51 99130 1412</a> </p>
-            <p><a href="https://www.linkedin.com/in/gstvdfnbch/">LinkedIn</a> |
-               <a href="https://github.com/gstvdfnbch">GitHub</a> |
-               <a href="https://gstvdfnbch.medium.com/">Medium</a></p>
+     
+        <div class="container">
+            <h2>About me</h2>
+            <p>I am seeking opportunities that combine technical expertise with business management and product development. My goal is to contribute to the creation of innovative digital products, improving user experience and satisfaction.</p>
+        
+            <p>Currently, I am expanding my skills in Swift and UX/UI Design at Apple Academy POA at PUC-RS, focusing on app development to enhance my versatility in product design and technology.</p>
+        
+            <p>I'm currently studying Electrical Engineering at UFRGS, where I interned at PONFAC, working on solutions using digital image processing. Before that, I was a technical scholar at the Hydraulic Works Laboratory.</p>
+        
+            <p>My journey began with technical education in electronics at Salzano Vieira da Cunha, participating in science fairs and interning at ProTune Electronics, developing automotive touch screen interfaces in C.</p>
+        
+            <p>With a passion for innovation, I look forward to joining a team that values creativity and growth.</p>
         </div>
-    </header>
-
-    <div class="container">
-        <h2>About me</h2>
-        <p>I am seeking opportunities that combine technical expertise with business management and product development. My goal is to contribute to the creation of innovative digital products, improving user experience and satisfaction.</p>
-    
-        <p>Currently, I am expanding my skills in Swift and UX/UI Design at Apple Academy POA at PUC-RS, focusing on app development to enhance my versatility in product design and technology.</p>
-    
-        <p>Previously, I studied Electrical Engineering at UFRGS, where I interned at PONFAC, working on solutions using digital image processing. Before that, I was a technical scholar at the Hydraulic Works Laboratory.</p>
-    
-        <p>My journey began with technical education in electronics at Salzano Vieira da Cunha, participating in science fairs and interning at ProTune Electronics, developing automotive touch screen interfaces in C.</p>
-    
-        <p>With a passion for innovation, I look forward to joining a team that values creativity and growth.</p>
     </div>
 
     <div class="video-container">
