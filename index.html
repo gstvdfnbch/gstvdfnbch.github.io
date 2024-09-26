@@ -295,6 +295,21 @@
             background-color: black;
         }
 
+        .images-side-to-side {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; /* Distribui as imagens com espaço entre elas */
+            margin-top: 10px;
+        }
+
+        .images-side-to-side img {
+            width: 30%; /* Garante que as imagens ocupem 100% da largura disponível */
+            height: auto; /* Mantém a proporção da altura */
+            object-fit: contain; /* Garante que as imagens fiquem dentro do contêiner sem distorção */
+            max-width: 100%; /* Impede que as imagens ultrapassem o contêiner */
+        }
+
         /* Estilo responsivo */
         @media (max-width: 600px) {
             .container {
@@ -553,6 +568,40 @@
             Seu navegador não suporta a reprodução de vídeos.
         </video>
     </div>
+</div>
+
+<!--Encarte-->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/encarte.png" alt="Imagem 1">
+            <a href="https://apple.co/3Y0B5Rj" target="_blank">
+                <img src="apple.png" class="badget" alt="Imagem 2">
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.marcelo.encarte_facil_2&pcampaignid=web_share" target="_blank">
+                <img src="google.png" class="badget" alt="Imagem 2">
+            </a>
+        </div>
+
+        <div class="text-content">
+            <h1>Encarte Rápido</h1>
+            
+            <p>Encarte Rápido, you can create promotional flyers with your store’s offers to share on social media and reach more customers. Easily add your company logo, search for products directly on Google within the app, design your own themes using PNG images, and even remove the background from ready-made images.</p>
+            
+            <div class="tags">
+                <span>Flutter</span>
+            </div>
+
+            <div class="images-side-to-side">
+                <img src="images/encarte1.png">
+                <img src="images/encarte2.png">
+                <img src="images/encarte3.png">
+            </div>
+        </div>
+    </div>
+
+    
 </div>
 
 <!--Tans-->
