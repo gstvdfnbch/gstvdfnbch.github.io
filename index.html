@@ -39,7 +39,7 @@
             display: block;
             width: 100%;
             margin: 0;
-align-self: flex-start;
+            align-self: flex-start;
             flex-direction: column;
             flex-grow: 1;
         }
@@ -166,6 +166,10 @@ align-self: flex-start;
             text-decoration: none;
             background-color: black;
         }
+        .medium-card:hover {
+            background-color: rgb(91, 91, 91);
+
+        }
         .medium-card img {
             width: 100%;
             align-items: center;
@@ -179,6 +183,7 @@ align-self: flex-start;
             margin: 0;
             font-size: 20px;
             color: white;
+            text-decoration: none;
         }
         .medium-card p {
             margin: 5px 0;
@@ -186,12 +191,20 @@ align-self: flex-start;
             max-width: 800px;
             width: 100%;
             color: #ffffff97;
+            text-decoration: none;
         }
 
         .medium-card h3, .medium-card p {
             word-wrap: break-word; /* Força a quebra de palavras grandes */
             white-space: normal; /* Permite que o texto quebre linhas */
             text-align: left; /* Opcional: alinha o texto à esquerda */
+        }
+
+        a {
+            text-decoration: none; /* Remove o sublinhado do link */
+        }
+        a:hover {
+            text-decoration: none;
         }
 
         /* Estilo responsivo */
