@@ -292,7 +292,12 @@
             margin-bottom: 20px;
             margin-right: 10px;
             text-decoration: none;
-            background-color: black;
+            background-color: greenyellow;
+        }
+        .knowledges-card img {
+            width: 100%; /* A imagem ocupará 100% da largura disponível */
+            height: auto; /* Mantém a proporção da imagem */
+            object-fit: contain; /* Garante que a imagem não seja distorcida e caiba dentro do contêiner */
         }
 
         .images-side-to-side {
@@ -443,7 +448,7 @@
 <div class="title">Knowledge</div> 
 <div class="knowledges-container">
     <div class="knowledges-card">
-        <img src="knowledges/1swift.png" width="auto">
+        <img src="knowledges/1swift.png">
     </div>
 
     <div class="knowledges-card">
