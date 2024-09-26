@@ -61,6 +61,12 @@
             text-decoration: underline;
         }
         /* Estilo para o segundo bloco */
+
+        .badget {
+            width: 80%;
+             margin-top: 10px;
+        }
+
         .images {
             width: 30%;
             height: auto;
@@ -72,7 +78,8 @@
             width: 50%;
             height: auto;
             margin-right: 20px;
-            margin-top: 20px;
+            margin-top: 5px;
+            text-align: center;
         }
         .text-content {
             display: flex;
@@ -97,12 +104,12 @@
             align-items: center;
         }
         .tags span {
-            background-color: #888888;
+            background-color: #88888800;
             color: white;
             padding: 5px 10px;
             border-color: white;
             border-radius: 5px;
-            border-width: 2px;
+            border: 2px solid white;
             margin-right: 5px;
             margin-bottom: 5px;
             margin-top: 10px;
@@ -134,6 +141,7 @@
         .container-apps {
             display: flex;
             flex-direction: row;
+            align-items: center;
         }
 
         .medium-container {
@@ -177,7 +185,6 @@
             object-fit: cover;
             border-radius: 10px;
             margin-bottom: 20px;
-            overflow: hidden; /* Esconder o conteúdo que exceder a altura */
         }
         .medium-card h3 {
             margin: 0;
@@ -207,6 +214,75 @@
             text-decoration: none;
         }
 
+
+        .knowledges-container {
+            width: 100%;
+            max-width: 800px;
+            padding-left: 0px;
+            padding-right: 40px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap; 
+            overflow-x: scroll;
+            overflow-y: hidden;
+            align-content: start;
+        }
+        .knowledges-container::-webkit-scrollbar {
+            display: none; /* Opcional: Oculta a barra de rolagem */
+        }
+        .knowledges-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 300px;
+            max-width: 600px;
+            height: 300px;
+            margin-bottom: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+            background-color: black;
+        }
+
+        .knowledges-card img {
+            width: 100%;
+            align-items: center;
+            object-fit: cover;
+        }
+
+        .knowledges-container {
+            width: 100%;
+            max-width: 800px;
+            padding-left: 0px;
+            padding-right: 40px;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            white-space: nowrap; 
+            overflow-x: scroll;
+            overflow-y: hidden;
+            align-content: start;
+        }
+        .knowledges-container::-webkit-scrollbar {
+            display: none; /* Opcional: Oculta a barra de rolagem */
+        }
+        .knowledges-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 50px;
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            text-decoration: none;
+            background-color: black;
+        }
+
         /* Estilo responsivo */
         @media (max-width: 600px) {
             .container {
@@ -229,24 +305,29 @@
                 margin-right: 0;
                 width: 50%;
             }
+            .badget {
+                width: 50%;
+                min-width: 100px;
+                margin-top: 10px;
+            }
             .widget {
-                width: 100%;
+                width: 50%;
                 height: auto;
                 margin-top: 0px;
                 margin-right: 0px;
-                margin-bottom: 20px;
+                margin-bottom: 10px;
             }
             .medium-card {
-            min-width: 200px;
-            max-width: 300px;
-            height: 300px;
-        }
+                min-width: 200px;
+                max-width: 300px;
+                height: 300px;
+            }
         }
     </style>
 </head>
 <body>
 
-<!-- Primeira seção -->
+<!-- Perfil-->
 <div class="container">
     <div class="images">
         <img src="perfil.jpg" alt="Foto de Gustavo Diefenbach" class="profile-pic">
@@ -264,6 +345,7 @@
     </div>
 </div>
 
+<!-- Medium-->
 <div class="medium-container">
         <a  href="https://medium.com/@gstvdfnbch/creative-pixel-art-customization-with-textures-uiimage-core-graphics-swift-ios-627e278fdf6?source=user_profile---------0----------------------------" target="_blank">
             <div class="medium-card">
@@ -328,14 +410,76 @@
 
 </div>
 
-<!-- Segunda seção - Adicionada abaixo -->
+<!-- Knowledge-->
+<div class="knowledges-container">
+    <div class="knowledges-card">
+        <img src="knowledges/1swift.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/2swiftui.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/3dart.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/4flutter.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/5spritekit.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/6scenekit.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/7gameplaykit.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/8gamecenter.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/9c.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/10python.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/11ux.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/12ps.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/13ai.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/14figma.png">
+    </div>
+
+    <div class="knowledges-card">
+        <img src="knowledges/15procreate.png">
+    </div>
+</div>
+
+<!--Burguer Maker-->
 <div class="container-collum">
 
     <div class="container-apps">
         <div class="widget">
             <img src="icons/burguer.png" alt="Imagem 1">
-            
-            <!-- <img src="apple.png" alt="Imagem 2"> -->
+            <img src="apple.png" class="badget" alt="Imagem 2">
         </div>
 
         <div class="text-content">
@@ -360,6 +504,153 @@
     </div>
 </div>
 
+<!--Flipty-->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/flipty.png" alt="Imagem 1">
+            <img src="apple.png" class="badget" alt="Imagem 2">
+        </div>
+
+        <div class="text-content">
+            <h1>Flipty</h1>
+            
+            <p>Developed an application for Apple Watch and iPhone featuring a six-sided dice game and a Head and Tails game. Each game is activated through gesture detection. In the dice game, rotating your wrist causes the dice to spin and stop at a random number. In the Head and Tails game, when you make a throwing motion, like you're tossing a coin, the virtual coin on your device rotates and lands on one of its sides.</p>
+            
+            <div class="tags">
+                <span>Swift</span>
+                <span>SpriteKit</span>
+                <span>AVFoundation</span>
+                <span>Animation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Videos/flity.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+</div>
+
+<!--Tans-->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/tans.png" alt="Imagem 1">
+            <img src="apple.png" class="badget" alt="Imagem 2">
+        </div>
+
+        <div class="text-content">
+            <h1>Tans: Logic for kids</h1>
+            
+            <p>Educational application focused on logical reasoning and computational thinking for children aged 7 to 9, developed using SwiftUI. The app has 3 games, and all of them were developed entirely with SwiftUI.</p>                    <p1>Swift | SwiftUI | Haptics</p1>
+            
+            <div class="tags">
+                <span>Swift</span>
+                <span>Haptics</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Videos/4tans.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+</div>
+
+<!--Tardigrado-->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/tardigrado.png" alt="Imagem 1">
+            <img src="apple.png" class="badget" alt="Imagem 2">
+        </div>
+
+        <div class="text-content">
+            <h1>Tardigrado</h1>
+            
+            <p>A platform game where I had the opportunity to work with the SpriteKit framework for the first time. This game utilized character action control, collisions, and basic game design concepts.</p>
+            
+            <div class="tags">
+                <span>Swift</span>
+                <span>SpriteKit</span>
+                <span>AVFoudation</span>
+                <span>Animation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Videos/3tardigrado.mov" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+</div>
+
+<!--Animal Keyboard-->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/animal.png" alt="Imagem 1">
+            <img src="apple.png" class="badget" alt="Imagem 2">
+        </div>
+
+        <div class="text-content">
+            <h1>Animal Keyboards</h1>
+            
+            <p>Interactive keyboard designed to assist in motor and cognitive discovery of children through animal sound identification, developed in SwiftUI. This was also my first time participating in the Swift Student Challenge.</p>                    <p1>Swift | SwiftUI | AVFoundation | Design</p1>
+            
+            <div class="tags">
+                <span>Swift</span>
+                <span>SwiftUI</span>
+                <span>AVFoudation</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Videos/2animalkeyboard.mp4" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+</div>
+
+<!--Flappy Chicken-->
+<div class="container-collum">
+
+    <div class="container-apps">
+        <div class="widget">
+            <img src="icons/flappy.png" alt="Imagem 1">
+        </div>
+
+        <div class="text-content">
+            <h1>Flappy Chicken</h1>
+            
+            <p>Developed a terminal-style game referencing the Flappy Bird game. It was developed in Swift, with no external dependencies, in less than a week of work.</p>
+            
+            <div class="tags">
+                <span>Swift on Mac terminal</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Videos/1flipplychicken.mov" type="video/mp4">
+            Seu navegador não suporta a reprodução de vídeos.
+        </video>
+    </div>
+</div>
 
 </body>
 </html>
